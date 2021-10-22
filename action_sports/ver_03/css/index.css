@@ -1,0 +1,166 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* top__gnb */
+
+.top__gnb {
+    height: 40px;
+    background-color: #BDBDBD;
+    font-size: 11pt;
+    color: #666666;
+}
+
+.top__gnb__wrap {}
+
+.top__gnb__list {}
+
+.top__gnb__item {}
+
+
+/* header (gnb) */
+
+.header {
+    height: 96.5px;
+    background-color: #FFFFFF;
+}
+
+.gnb {}
+
+.gnb__logo {}
+
+.gnb__logo__img {
+    width: 151.4px;
+}
+
+.gnb__toggler {}
+
+.gnb__toggler__icon {}
+
+.gnb__wrap {}
+
+.gnb__list {}
+
+.gnb__item {
+    margin-left: 28px;
+    font-size: 16.5pt;
+    color: #666666;
+}
+
+.gnb__item__link {
+    padding-right: 0 !important;
+    padding-left: 0 !important
+}
+
+
+/* main */
+
+.main {
+    margin: 50px 0 100px 0;
+}
+
+
+/* container */
+
+.container {
+    width: 1200px !important;
+    max-width: 1200px !important;
+    padding: 0 !important;
+}
+
+
+/* liveplay */
+
+.liveplay {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.liveplay__list {}
+
+.liveplay__img {
+    width: 603px;
+}
+
+
+/* banners */
+
+.banners {
+    margin-top: 100px;
+}
+
+.banners__wrap {}
+
+
+/* highlight */
+
+.highlight {
+    margin-top: 100px;
+}
+
+.highlight.row {
+    margin: 0 !important;
+}
+
+.highlight__header {}
+
+.highlight__header__wrap {}
+
+.highlight__title {
+    font-size: 27pt;
+}
+
+.highlight__more {
+    /* margin-left: ; */
+}
+
+.highlight__item {
+    width: 277.7px;
+    /* margin-right: 29.7px; */
+    padding: 0 !important;
+}
+
+.highlight__item:nth-child(0) {
+    text-align: center;
+}
+
+.highlight__item:nth-child(4n+1) {
+    margin-right: 0px;
+    color: red;
+}
+
+.highlight__item__wrap {}
+
+.highlight__item__thumbnail {
+    position: relative;
+}
+
+.highlight__item__img {
+    height: 156.2px;
+}
+
+.highlight__item__length {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    padding: 5px 10px;
+    background-color: #666666;
+    font-size: 12pt;
+    color: #FFFFFF;
+    border-radius: 26.785px;
+}
+
+.highlight__item__body {}
+
+.highlight__item__title {
+    font-size: 17pt;
+    font-weight: bold;
+    color: #333333;
+}
+
+.highlight__item__body__box {}
+
+.highlight__item__views {}
+
+.highlight__item__date {}

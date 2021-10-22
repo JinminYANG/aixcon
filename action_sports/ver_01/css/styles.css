@@ -1,0 +1,606 @@
+@import url(reset.css);
+
+/* header 헤더 */
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 137px;
+    /* margin-bottom: 30px; */
+    background: #ffffff;
+    box-shadow: 0px 3px 5px 3px #EDEDED;
+    border-radius: 0 0 26.785px 26.785px;
+}
+
+.top__gnb {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #EDEDED;
+}
+
+.top__gnb__wrap {
+    display: block;
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.top__util {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.top__util__list {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.top__util__item {
+    float: left;
+    color: #666666;
+    font-size: 11pt;
+}
+
+.top__util__item:first-child::after {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #666666;
+    margin: 0 10px;
+}
+
+
+/* .top__util__item:last-child::before {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #666666;
+    margin: 0 10px;
+} */
+
+.menu__conatiner {
+    position: relative;
+    width: 1200px;
+    height: 97px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    margin-top: 10px;
+    /* position: relative; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+}
+
+.logo__img {
+    width: 151.4px;
+    height: auto;
+}
+
+.gnb {
+    /* position: relative; */
+    float: right;
+    height: 100%;
+}
+
+.gnb__wrap {
+    margin-top: 25px;
+}
+
+.gnb__list {}
+
+.gnb__list__item {
+    float: left;
+    font-size: 12.5pt;
+    color: #666666;
+    margin-left: 10.35px;
+}
+
+.gnb__list__item:first-child {
+    margin-left: 0;
+}
+
+.gnb__list__item__container {
+    background: none;
+    /* padding: 15px 25px; */
+    width: 120px;
+    height: 42.5px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.gnb__list__item__container:hover {
+    background-image: url(/images/public/menu_bg.png);
+    background-size: cover;
+    color: #ffffff;
+}
+
+.gnb__list__item__container:hover a {
+    color: #ffffff;
+}
+
+
+/* main */
+
+.main {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 50px;
+    background-color: #ffffff;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+
+/* liveplay 실시간 플레이어 */
+
+.liveplay {
+    width: 100%;
+    /* height: 300px; */
+    height: 400px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    /* margin: auto 0; */
+}
+
+
+/* test main liveplay */
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: auto;
+    filter: blur(2px);
+}
+
+.swiper-slide-active {
+    filter: blur(0px);
+}
+
+.liveplay__container {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.liveplay__item {
+    position: relative;
+}
+
+.liveplay__item video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.liveplay__overlay {
+    position: absolute;
+    /* top: 90%; */
+    bottom: 30%;
+    left: 3%;
+    z-index: 1;
+}
+
+.liveplay__title {}
+
+.liveplay__subtitle {
+    margin-top: 10px;
+}
+
+
+/* banners 메인 배너 */
+
+.banners {
+    width: 100%;
+    height: 100px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.banners__container {}
+
+.banners__img {
+    width: 100%;
+}
+
+
+/* highlight 하이라이트 */
+
+.highlight {
+    width: 100%;
+    height: auto;
+    border: 1px solid blue;
+    overflow: hidden;
+}
+
+.highlight__container {
+    width: 100%;
+    height: 100%;
+}
+
+.hightlight__header {
+    width: 100%;
+    height: 10%;
+    /* line-height: 2.5; */
+    /* margin: 10px 0 0 10px; */
+    /* box-sizing: border-box; */
+    /* padding: 10px 0 0 10px; */
+    margin: 10px;
+}
+
+.highlight__title {
+    display: inline-block;
+    font-size: 16pt;
+    /* margin: 5px 30px 5px 5px; */
+}
+
+.highlight__more {
+    display: inline-block;
+    margin-left: 20px;
+    border: 1px solid #666666;
+}
+
+.hightlight__more__btn {
+    display: block;
+    font-size: 12pt;
+    padding: 3px 8px;
+}
+
+.highlight__list {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-row-gap: 30px;
+}
+
+.highlight__item {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    /* padding: 0 5%; */
+    overflow: hidden;
+}
+
+.highlight__item__container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #666666;
+}
+
+.highlight__item__thumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+.highlight__item__time {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5px 10px;
+    background: #666666;
+}
+
+.video__length {
+    color: #ffffff;
+}
+
+.highlight__item__title {
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+/* schedule 경기 일정/결과 */
+
+.schedule {
+    float: left;
+    width: 50%;
+    height: 500px;
+    /* border: 1px solid green; */
+    overflow: hidden;
+    /* padding: 20px; */
+    /* margin: 20px; */
+}
+
+.schedule__conatiner {}
+
+.schedule__header {
+    width: 90%;
+    height: 10%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.schedule__title {
+    display: inline-block;
+    font-size: 16pt;
+}
+
+.schedule__more {
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+    border: 1px solid #666666;
+}
+
+.schedule__more__btn {
+    display: block;
+    font-size: 12pt;
+    padding: 3px 8px;
+}
+
+.schedule__date__info {
+    /* display: inline-block; */
+    display: grid;
+    width: 90%;
+    height: 450px;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    border: 3px solid #EDEDED;
+    overflow: auto;
+}
+
+.date__select {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.date__previous {
+    margin-right: 15px;
+}
+
+.date__seleted {}
+
+.date__next {
+    margin-left: 15px;
+}
+
+.schedule__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+}
+
+.schedule__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* margin-bottom: 20px; */
+    /* margin: 10px; */
+    /* padding: 10px; */
+    width: 100%;
+    height: 90px;
+    /* height: 70px; */
+    line-height: 2;
+    /* border: 1px solid black; */
+}
+
+.home,
+.away {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.home__box {
+    text-align: right;
+    padding: 10px 5px;
+}
+
+.home__title,
+.away__title {
+    display: block;
+    font-size: 14pt;
+    margin: 8px 0;
+}
+
+.home__pitcher {
+    display: block;
+}
+
+.home__logo,
+.away__logo {
+    text-align: center;
+    margin: 15px;
+}
+
+.home__logo__img {
+    width: 50px;
+}
+
+.away__box {
+    text-align: left;
+    padding: 10px 5px;
+}
+
+.away__logo__img {
+    width: 50px;
+}
+
+.away__title {
+    font-size: 14pt;
+    margin-bottom: 5px;
+}
+
+.away__pitcher {}
+
+.schedule__info {
+    text-align: center;
+    padding: 10px;
+}
+
+.schedule__stadium {
+    display: block;
+}
+
+.schedule__start {
+    display: block;
+}
+
+.schedule__home__score {
+    /* text-align: left; */
+    float: left;
+    color: red;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.schedule__end {}
+
+.schedule__away__score {
+    float: right;
+    color: blue;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.schedule__highlight {}
+
+.schedule__highlight__btn {
+    /* display: inline-block; */
+    border: 3px solid #EDEDED;
+    padding: 1px 10px;
+    /* margin-top: 5px; */
+}
+
+.schedule__cancel {
+    display: block;
+}
+
+.schedule__cancel__reason {
+    display: block;
+}
+
+.schedule__none {}
+
+.schedule__item__none {
+    text-align: center;
+    grid-column: 2;
+    line-height: 5;
+}
+
+
+/* recode 구단 순위 */
+
+.record {
+    float: right;
+    width: 50%;
+    height: 500px;
+    /* border: 1px solid palevioletred; */
+    overflow: hidden;
+    /* padding: 20px; */
+}
+
+.main::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.record__container {}
+
+.record__title {
+    width: 90%;
+    font-size: 16pt;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.record__kbo {
+    width: 90%;
+    height: 450px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    text-align: center;
+    border: 3px solid #EDEDED;
+}
+
+.record__kbo__thead {}
+
+.record__kbo__thead th {
+    padding: 15px 0;
+}
+
+.record__kbo__tbody {}
+
+.record__kbo__tr td {
+    padding: 10px 0;
+}
+
+
+/* footer */
+
+.footer {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid yellow;
+    text-align: center;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.fnb {}
+
+.fnb__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.fnb__list::before {
+    content: "";
+}
+
+.fnb__item {
+    padding: 25px;
+    font-weight: bold;
+}
+
+.company {}
+
+.company__info {}
+
+.company__title {}
+
+.company__title::after,
+.company__address::after {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #000000;
+    margin-left: 5px;
+}
+
+.company__address {}
+
+.company__ceo {}

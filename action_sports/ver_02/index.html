@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Action Sports</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap'); */
+        
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 회원정보영역 -->
+    <nav class="navbar navbar-light navbar-expand-md bd-subnavbar py-0" aria-label="Secondary navigation">
+        <div class="container-xxl d-flex align-items-md-center justify-content-end">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 flex-row">
+                <li class="nav-item p-1">
+                    <a class="nav-link" href="#">로그인</a>
+                </li>
+                <li class="nav-item p-1">
+                    <a class="nav-link" href="#">회원가입</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 네비게이션 -->
+    <header class="navbar navbar-expand-md navbar-light sticky-top shadow-sm p-2 rounded" style="background-color: #EDEDED;">
+
+        <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
+            <a class="navbar-brand p-0 me-2" href="#">
+                <img src="images/public/as_logo.png" alt="logo-img" width="100" height="50">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">액션 라이브</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">하이라이트</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">팬페이지</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">야구소식</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">야구설명서</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <div class="container pt-4"></div> -->
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- 실시간 플레이어 -->
+        <article class="liveplay bg-light">
+            <div class="liveplay__item ratio" style="--bs-aspect-ratio: 45%;">
+                <video controls autoplay loop>
+                        <source src="/action_sports/ver_02/images/main/test/videos/live_11.mp4" type="video/mp4" />
+                    </video>
+            </div>
+        </article>
+
+        <div class="container pt-4">
+            <!-- 메인 배너 -->
+            <article id="carouselExampleControls" class="banners carousel slide mt-3" data-bs-ride="carousel">
+
+                <div class="banners__container carousel-inner">
+
+                    <div class="banners_item carousel-item active">
+                        <img src="/action_sports/ver_02/images/main/test/images/banner_07.jpg" class="banners__img img-fluid d-block w-100" alt="banner_01" />
+                    </div>
+
+                    <div class="banners_item carousel-item">
+                        <img src="/action_sports/ver_02/images/main/test/images/banner_08.jpg" class="banners__img img-fluid d-block w-100" alt="banner_02" />
+                    </div>
+
+                    <div class="banners_item carousel-item">
+                        <img src="/action_sports/ver_02/images/main/test/images/banner_09.jpg" class="banners__img img-fluid d-block w-100" alt="banner_03" />
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon btn-dark btn-lg" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon btn-dark btn-lg" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </article>
+
+            <!-- 하이라이트 -->
+            <article class="highlight row">
+
+                <div class="row">
+                    <div class="col-6 border-top border-success mt-3 py-2 mx-3">
+                        <span class="highlight__title fs-5">하이라이트</span>
+                        <span class="more_btn btn btn-outline-secondary py-0 px-2 ms-3 align-text-top">더보기</span>
+                    </div>
+                </div>
+
+
+                <div class="highlight__item col-lg-3 col-md-6 col-sm-6 mb-2">
+                    <div class="highlight__item__container card">
+                        <img src="/action_sports/ver_02/images/main/test/images/baseball_01.jpg" alt="highlight_01" class="highlight__item__thumbnail img-thumbnail card-img-top p-2">
+
+                        <div class="card-body text-start">
+                            <span class="highlight__item__title card-text fs-6">2022 KIA 4번타자는 황대인? 플래툰은 이제 그만! </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight__item col-lg-3 col-md-6 col-sm-6 mb-2">
+                    <div class="highlight__item__container card">
+                        <img src="/action_sports/ver_02/images/main/test/images/baseball_02.jpg" alt="highlight_01" class="highlight__item__thumbnail img-thumbnail card-img-top p-2">
+
+                        <div class="card-body text-start">
+                            <span class="highlight__item__title card-text fs-6">[역대 10/20 조회수 1위] '부상이 아니길...' 엄청난 캐치</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight__item col-lg-3 col-md-6 col-sm-6 mb-2">
+                    <div class="highlight__item__container card">
+                        <img src="/action_sports/ver_02/images/main/test/images/baseball_09.jpg" alt="highlight_01" class="highlight__item__thumbnail img-thumbnail card-img-top p-2">
+
+                        <div class="card-body text-start">
+                            <span class="highlight__item__title card-text fs-6">'구자욱의 극대노 이유는?!' 퇴장도 불사한 거친 항의! [7AM]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight__item col-lg-3 col-md-6 col-sm-6 mb-2">
+                    <div class="highlight__item__container card">
+                        <img src="/action_sports/ver_02/images/main/test/images/baseball_04.jpg" alt="highlight_01" class="highlight__item__thumbnail img-thumbnail card-img-top p-2">
+
+                        <div class="card-body text-start">
+                            <span class="highlight__item__title card-text fs-6">'대체 퓨처스에서 무슨 일이?' 타격왕 밀어주기 논란! [7AM]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight__item col-lg-3 col-md-6 col-sm-6 mb-2">
+                    <div class="highlight__item__container card">
+                        <img src="/action_sports/ver_02/images/main/test/images/baseball_05.jpg" alt="highlight_01" class="highlight__item__thumbnail img-thumbnail card-img-top p-2">
+
+                        <div class="card-body text-start">
+                            <span class="highlight__item__title card-text fs-6">[10/19] '7K로 7승을 추가!' 안우진 삼진 모음</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight__item col-lg-3 col-md-6 col-sm-6 mb-2">
+                    <div class="highlight__item__container card">
+                        <img src="/action_sports/ver_02/images/main/test/images/baseball_06.jpg" alt="highlight_01" class="highlight__item__thumbnail img-thumbnail card-img-top p-2">
+
+                        <div class="card-body text-start">
+                            <span class="highlight__item__title card-text fs-6">미란다HL - '시즌 221K' 최동원의 아성에 다가서는 역투</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight__item col-lg-3 col-md-6 col-sm-6 mb-2">
+                    <div class="highlight__item__container card">
+                        <img src="/action_sports/ver_02/images/main/test/images/baseball_07.jpg" alt="highlight_01" class="highlight__item__thumbnail img-thumbnail card-img-top p-2">
+
+                        <div class="card-body text-start">
+                            <span class="highlight__item__title card-text fs-6">공 한개면 충분합니다! 김웅빈의 결정적인 3점 홈런</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight__item col-lg-3 col-md-6 col-sm-6 mb-2">
+                    <div class="highlight__item__container card">
+                        <img src="/action_sports/ver_02/images/main/test/images/baseball_08.jpg" alt="highlight_01" class="highlight__item__thumbnail img-thumbnail card-img-top p-2">
+
+                        <div class="card-body text-start">
+                            <span class="highlight__item__title card-text fs-6">[최정 기록] 'KBO 리그 개인 통산 400홈런'</span>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+            <!-- 경기 일정/결과 & 구단 순위 -->
+            <article class="schedule_and_record row">
+                <!-- 경기 일정/결과 -->
+                <div class="schedule col-lg-6 col-md-12">
+
+                    <div class="col-6 border-top border-success mt-3 py-2">
+                        <span class="highlight__title fs-5 ">경기 일정/결과</span>
+                        <span class="more_bt btn btn-outline-secondary py-0 px-2 ms-3 align-text-top">더보기</span>
+                    </div>
+
+                    <!-- <h2 class="schedule__title fs-5 my-3">경기 일정/결과</h2> -->
+
+                    <div class="schedule__contents card">
+
+                        <div class="schedule__item row my-3">
+                            <div class="home col-4 ">
+                                <div class="row ">
+                                    <div class="col-8 text-end align-self-center ">
+                                        <div class="row ">
+                                            <span class="home__title fs-6 ">팀명</span>
+                                            <span class="home__pitcher fs-6 ">선발투수</span>
+                                        </div>
+                                    </div>
+                                    <div class="home__logo col-4 align-self-center px-0">
+                                        <img src="/action_sports/ver_02/images/main/test/images/team_logo.png " alt="home_logo_img " class="home__logo__img img-thumbnail" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="schedule__info col-4 text-center align-self-center">
+                                <div class="row ">
+                                    <span class="schedule__stadium ">경기장</span>
+                                    <span class="schedule__start ">경기시작시간</span>
+                                </div>
+                            </div>
+
+                            <div class="away col-4 ">
+                                <div class="row ">
+                                    <div class="away__logo col-4 align-self-center px-0">
+                                        <img src="/action_sports/ver_02/images/main/test/images/team_logo.png " alt="away_logo_img " class="home__logo__img img-thumbnail " />
+                                    </div>
+                                    <div class="col-8 text-start align-self-center ">
+                                        <div class="row ">
+                                            <span class="away__title fs-6 ">팀명</span>
+                                            <span class="away__pitcher fs-6 ">선발투수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="schedule__item row my-3 ">
+                            <div class="home col-4 ">
+                                <div class="row ">
+                                    <div class="col-8 text-end align-self-center ">
+                                        <div class="row ">
+                                            <span class="home__title fs-6 ">팀명</span>
+                                            <span class="home__pitcher fs-6 ">선발투수</span>
+                                        </div>
+                                    </div>
+                                    <div class="home__logo col-4 align-self-center px-0">
+                                        <img src="/action_sports/ver_02/images/main/test/images/team_logo.png " alt="home_logo_img " class="home__logo__img img-thumbnail " />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="schedule__info col-4 text-center align-self-center">
+                                <div class="row ">
+                                    <span class="schedule__home__score col-3 text-end ">0</span>
+                                    <span class="schedule__end col-6 ">종료</span>
+                                    <span class="schedule__away__score col-3 text-start ">0</span>
+                                </div>
+                                <div class="schedule__highlight col-12 align-self-center ">
+                                    <a href="# " class="schedule__highlight__btn btn btn-outline-success btn-sm py-0">하이라이트</a>
+                                </div>
+                            </div>
+
+                            <div class="away col-4">
+                                <div class="row ">
+                                    <div class="away__logo col-4 align-self-center px-0">
+                                        <img src="/action_sports/ver_02/images/main/test/images/team_logo.png " alt="away_logo_img " class="home__logo__img img-thumbnail " />
+                                    </div>
+                                    <div class="col-8 text-start align-self-center ">
+                                        <div class="row ">
+                                            <span class="away__title fs-6 ">팀명</span>
+                                            <span class="away__pitcher fs-6 ">선발투수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="schedule__item row my-3 ">
+                            <div class="home col-4">
+                                <div class="row">
+                                    <div class="col-8 text-end align-self-center ">
+                                        <div class="row ">
+                                            <span class="home__title fs-6 ">팀명</span>
+                                            <span class="home__pitcher fs-6 ">선발투수</span>
+                                        </div>
+                                    </div>
+                                    <div class="home__logo col-4 align-self-center px-0">
+                                        <img src="/action_sports/ver_02/images/main/test/images/team_logo.png " alt="home_logo_img " class="home__logo__img img-thumbnail " />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="schedule__info col-4 text-center align-self-center">
+                                <div class="row ">
+                                    <span class="schedule__cancel ">경기취소</span>
+                                    <span class="schedule__cancel__reason ">사유</span>
+                                </div>
+                            </div>
+
+                            <div class="away col-4 ">
+                                <div class="row ">
+                                    <div class="away__logo col-4 align-self-center px-0">
+                                        <img src="/action_sports/ver_02/images/main/test/images/team_logo.png " alt="away_logo_img " class="home__logo__img img-thumbnail " />
+                                    </div>
+                                    <div class="col-8 text-start align-self-center ">
+                                        <div class="row ">
+                                            <span class="away__title fs-6 ">팀명</span>
+                                            <span class="away__pitcher fs-6 ">선발투수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="schedule__item schedule__none row my-3">
+                            <span class="schedule__item__none col-12 text-center">경기 일정이 없습니다.</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 구단 순위 -->
+                <div class="record col col-lg-6 col-md-12">
+
+                    <div class="record__container table-responsive panel panel-default">
+
+                        <div class="col-6">
+                            <h2 class="record__title fs-5 border-top border-success mt-3 py-2">구단 순위</h2>
+                        </div>
+
+                        <div class="card">
+
+                            <table class="record__kbo table table-hover text-center mb-0 ">
+                                <thead class="record__kbo__thead ">
+                                    <th scope="col ">순위</th>
+                                    <th scope="col ">팀명</th>
+                                    <th scope="col ">경기</th>
+                                    <th scope="col ">승</th>
+                                    <th scope="col ">무</th>
+                                    <th scope="col ">패</th>
+                                    <th scope="col ">승률</th>
+                                    <th scope="col ">게임차</th>
+                                </thead>
+                                <tbody class="record__kbo__tbody ">
+                                    <tr class="record__kbo__tr ">
+                                        <th scope="row ">1</th>
+                                        <td>KT</td>
+                                        <td>130</td>
+                                        <td>71</td>
+                                        <td>7</td>
+                                        <td>52</td>
+                                        <td>0.577</td>
+                                        <td>0.0</td>
+                                    </tr>
+                                    <tr class="record__kbo__tr ">
+                                        <th scope="row ">2</th>
+                                        <td>삼성</td>
+                                        <td>132</td>
+                                        <td>70</td>
+                                        <td>8</td>
+                                        <td>54</td>
+                                        <td>0.565</td>
+                                        <td>1.5</td>
+                                    </tr>
+                                    <tr class="record__kbo__tr ">
+                                        <th scope="row ">3</th>
+                                        <td>LG</td>
+                                        <td>127</td>
+                                        <td>66</td>
+                                        <td>9</td>
+                                        <td>52</td>
+                                        <td>0.559</td>
+                                        <td>2.5</td>
+                                    </tr>
+                                    <tr class="record__kbo__tr ">
+                                        <th scope="row ">4</th>
+                                        <td>두산</td>
+                                        <td>128</td>
+                                        <td>64</td>
+                                        <td>5</td>
+                                        <td>59</td>
+                                        <td>0.520</td>
+                                        <td>7.0</td>
+                                    </tr>
+                                    <tr class="record__kbo__tr ">
+                                        <th scope="row ">5</th>
+                                        <td>키움</td>
+                                        <td>130</td>
+                                        <td>63</td>
+                                        <td>6</td>
+                                        <td>61</td>
+                                        <td>0.508</td>
+                                        <td>8.5</td>
+                                    </tr>
+                                    <tr class="record__kbo__tr ">
+                                        <th scope="row ">6</th>
+                                        <td>SSG</td>
+                                        <td>132</td>
+                                        <td>60</td>
+                                        <td>12</td>
+                                        <td>60</td>
+                                        <td>0.500</td>
+                                        <td>9.5</td>
+                                    </tr>
+                                    <tr class="record__kbo__tr ">
+                                        <th scope="row ">7</th>
+                                        <td>NC</td>
+                                        <td>127</td>
+                                        <td>59</td>
+                                        <td>7</td>
+                                        <td>61</td>
+                                        <td>0.492</td>
+                                        <td>10.5</td>
+                                    </tr>
+                                    <tr class="record__kbo__tr ">
+                                        <th scope="row ">8</th>
+                                        <td>롯데</td>
+                                        <td>131</td>
+                                        <td>60</td>
+                                        <td>6</td>
+                                        <td>65</td>
+                                        <td>0.480</td>
+                                        <td>12.0</td>
+                                    </tr>
+                                    <tr class="record__kbo__tr ">
+                                        <th scope="row ">9</th>
+                                        <td>KIA</td>
+                                        <td>128</td>
+                                        <td>50</td>
+                                        <td>8</td>
+                                        <td>70</td>
+                                        <td>0.417</td>
+                                        <td>19.5</td>
+                                    </tr>
+                                    <tr class="record__kbo__tr ">
+                                        <th scope="row ">10</th>
+                                        <td>한화</td>
+                                        <td>133</td>
+                                        <td>47</td>
+                                        <td>10</td>
+                                        <td>76</td>
+                                        <td>0.382</td>
+                                        <td>24.0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+        </div>
+
+        <footer class="footer bg-light mt-3" style="background-color: #EDEDED;">
+            <div class="fnb__list row no-gutters mx-0 py-2">
+                <span class="fnb__item col-4 text-end"><a href="#" class="text-decoration-none text-dark">이용약관</a></span>
+                <span class="fnb__item col-4 text-center "><a href="#" class="text-decoration-none text-dark">개인정보취급방침</a></span>
+                <span class="fnb__item col-4 text-start "><a href="#" class="text-decoration-none text-dark">제휴문의</a></span>
+            </div>
+
+            <div class="company__info row no-gutters mx-0 py-2">
+                <span class="company__title col-3 text-end "><a href="#" class="text-decoration-none text-dark">(주)엑스콘</a></span>
+                <span class="company__address col-6 text-center">서울특별시 마포구 백범로 35, 서강대학교 떼이야르관 409호</span>
+                <span class="company__ceo col-3 text-start">대표이사: 최요한</span>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+    <!-- Script -->
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+</body>
+
+</html>

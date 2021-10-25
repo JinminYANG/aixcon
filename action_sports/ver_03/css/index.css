@@ -1,5 +1,5 @@
 :root {
-    --top-gnb-bg: #BDBDBD;
+    --top-gnb-bg: #EDEDED;
     --font-color-main: #666666;
     --font-color-sub: #808080;
     --font-color-third: #999999;
@@ -24,10 +24,6 @@
 .shadow {
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.37) !important;
-}
-
-.collapse:not(.show) {
-    /* display: none !important; */
 }
 
 
@@ -117,14 +113,128 @@
 
 /* liveplay */
 
-.liveplay {
-    text-align: center;
+.liveplay {}
+
+.liveplay__list {
+    width: 100%;
 }
 
-.liveplay__list {}
+.liveplay__item {
+    width: fit-content;
+    overflow: hidden;
+}
 
-.liveplay__img {
+.liveplay__item.active {
+    z-index: 30;
+}
+
+.liveplay__item__overlay {
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+.liveplay__item__overlay_icon {
+    top: 1em;
+    left: 1em;
+    width: 70px;
+}
+
+.liveplay__item__overlay__bottom {
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.liveplay__item__overlay__box {
+    bottom: 3em;
+    left: 1.5em;
+    color: var(--white);
+}
+
+.liveplay__item__overlay__title {
+    display: block;
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+.liveplay__item__overlay__sub {
+    display: block;
+}
+
+.liveplay__item__img {
     width: 603px;
+}
+
+.liveplay__item__left {
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.liveplay__item__left__01 {
+    z-index: 20;
+}
+
+.liveplay__item__left__01__img {
+    width: 477px;
+    height: auto;
+}
+
+.liveplay__item__left__overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.28);
+    z-index: 100;
+}
+
+.liveplay__item__left__02 {
+    z-index: 10;
+    left: 0;
+}
+
+.liveplay__item__left__02__img {
+    width: 410px;
+    height: auto;
+}
+
+.liveplay__item__right {
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.liveplay__item__right__01 {
+    z-index: 20;
+}
+
+.liveplay__item__right__01__img {
+    width: 477px;
+    height: auto;
+}
+
+.liveplay__item__right__overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.28);
+    z-index: 100;
+}
+
+.liveplay__item__right__02 {
+    z-index: 10;
+    right: 0;
+}
+
+.liveplay__item__right__02__img {
+    width: 410px;
+    height: auto;
 }
 
 
@@ -248,21 +358,18 @@
 /* schedule__and__record */
 
 .schedule__and__record {
-    /*  */
-    /*  */
-    /*  */
     gap: 0 47.9px;
-    /*  */
-    /*  */
-    /*  */
 }
 
 .schedule {
     margin-top: 100px;
     padding: 0;
+    width: 576px;
 }
 
-.schedule__header {}
+.schedule__header {
+    width: fit-content;
+}
 
 .schedule__title {
     font-size: 27pt;
@@ -282,7 +389,6 @@
 .schedule__contents {
     margin-top: 43.3px;
     background-color: var(--top-gnb-bg);
-    /* box-shadow: 0, -4px, 4px, rgba(var(--black), 0.13); */
     color: var(--font-color-main);
 }
 
@@ -296,7 +402,6 @@
 .schedule__date__prev {
     display: inline-block;
     background-color: var(--white);
-    /* padding: 10px; */
     width: 32.5px;
     height: 32.5px;
     line-height: 32.5px;
@@ -305,19 +410,19 @@
 .schedule__date__prev__img {
     width: 10px;
     height: auto;
+    margin-bottom: 3px;
+    margin-right: 1px;
 }
 
 .schedule__date__today {
     margin: 0 34.5px;
     font-size: 17pt;
-    font-weight: bold;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .schedule__date__next {
     display: inline-block;
     background-color: var(--white);
-    /* padding: 10px; */
     width: 32.5px;
     height: 32.5px;
     line-height: 32.5px;
@@ -326,35 +431,47 @@
 .schedule__date__next__img {
     width: 10px;
     height: auto;
+    margin-bottom: 3px;
+    margin-left: 1px;
 }
 
 .schedule__list {
     min-height: 544.3px;
     padding: 31.6px;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .schedule__item {
     height: 114.8px;
-    /* line-height: 114.8px; */
     margin: 0;
     border-bottom: 1px solid #E6E6E6;
 }
 
 .schedule__home {}
 
-.schedule__home__wrap {}
+.schedule__home__wrap,
+.schedule__away__wrap {}
 
 .schedule__home__box,
 .schedule__away__box {
     padding: 0;
 }
 
-.schedule__home__title {
-    /* text-align: right; */
+.schedule__home__title,
+.schedule__away__title {
+    display: block;
     font-size: 16pt;
 }
 
-.schedule__home__logo {}
+.schedule__home__pitcher,
+.schedule__away__pitcher {
+    font-size: 9pt;
+}
+
+.schedule__home__logo,
+.schedule__away__logo {
+    padding: 0 10px;
+}
 
 .schedule__home__logo__img,
 .schedule__away__logo__img {
@@ -363,7 +480,8 @@
 
 .schedule__info {}
 
-.schedule__home__score {
+.schedule__home__score,
+.schedule__away__score {
     font-size: 40pt;
     font-weight: bold;
 }
@@ -378,14 +496,11 @@
 
 .schedule__info__box {}
 
-.schedule__info__end {}
+.schedule__info__end {
+    font-size: 10pt;
+}
 
 .schedule__highlight {}
-
-.schedule__away__score {
-    font-size: 40pt;
-    font-weight: bold;
-}
 
 .schedule__highlight__btn {
     padding: 0 6px;
@@ -397,6 +512,7 @@
 .record {
     margin-top: 100px;
     padding: 0;
+    width: 576px;
 }
 
 .record__header {}
@@ -411,23 +527,50 @@
     margin-top: 43.3px;
     background-color: var(--top-gnb-bg);
     color: var(--font-color-main);
+    position: relative;
+}
+
+.record__contents__table {
+    margin-bottom: 0;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    height: 631.5px;
 }
 
 .record__contents__header {
     height: 87.2px;
-    line-height: 62px;
+    line-height: 87.2px;
     text-align: center;
     font-size: 17pt;
     color: var(--font-color-main);
+    padding: 0 31.6px !important;
 }
 
 .record__kbo__tbody {
-    height: 544.3px;
-}
-
-.record__kbo__tbody {
-    background-color: var(--white);
+    position: relative;
+    height: 480px;
+    background: transparent;
     color: var(--font-color-main);
+    z-index: 3;
+}
+
+.record__contents__table__bg {
+    width: 100%;
+    height: 544.3px;
+    position: absolute;
+    top: 87.2px;
+    border-radius: 26.785px;
+    background: rgb(255, 255, 255, 0.9);
+    z-index: 1;
+}
+
+.record__kbo__tr th {
+    font-weight: bold;
+}
+
+.record__kbo__tr td:nth-child(2) {
+    font-weight: bold;
 }
 
 .table thead {
@@ -440,31 +583,31 @@
 
 .table thead tr th {
     border: none !important;
+    padding: 0;
 }
 
-.table tbody tr:first-child {
+.table th {
+    height: 47.7px;
+    padding: 0;
+    vertical-align: middle;
     border: none !important;
 }
+
+.table td {
+    height: 47.7px;
+    padding: 0.5rem;
+    vertical-align: middle;
+    border: none !important;
+    border-bottom: 1px solid black !important;
+}
+
+.table tbody tr:first-child {}
 
 .table tbody tr:first-child th,
-.table tbody tr:first-child td {
-    border: none !important;
-}
+.table tbody tr:first-child td {}
 
-.table tbody tr:first-child th {
-    border-radius: 26.785px 0 0 0;
-}
-
-.table tbody tr:first-child td:last-child {
-    border-radius: 0 26.785px 0 0;
-}
-
-.table tbody tr:last-child th {
-    border-radius: 0 0 0 26.785px;
-}
-
-.table tbody tr:last-child td:last-child {
-    border-radius: 0 0 26.785px 0;
+.record__kbo__tr {
+    height: 47.7px;
 }
 
 .record__kbo__first,
@@ -483,6 +626,11 @@
     background-color: var(--record-third);
 }
 
+.record__kbo__tr__logo {
+    width: 28px;
+    margin-right: 10px;
+}
+
 
 /* footer */
 
@@ -493,6 +641,7 @@
 .fnb__list {
     height: 90px;
     color: var(--font-color-sub);
+    font-size: 16pt;
 }
 
 .fnb__item__link {
@@ -502,4 +651,13 @@
 .company__info {
     height: 90px;
     color: var(--font-color-third);
+    font-size: 13pt;
+}
+
+.company__info__gap {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: var(--font-color-third);
+    margin: 0 10px;
 }

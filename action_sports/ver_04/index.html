@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Action Sports</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <!-- ver 4.6.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- bootstrap_icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 회원정보영역 -->
+    <nav class="top__gnb navbar navbar-light navbar-expand-md bd-subnavbar py-0 position-relative" aria-label="Secondary navigation">
+        <div class="top__gnb__wrap container d-flex align-items-md-center justify-content-end ">
+            <ul class="top__gnb__list navbar-nav flex-row form-inline">
+                <li class="top__gnb__item nav-item">
+                    <a class="top__gnb__item__link nav-link" href="#">로그아웃</a>
+                </li>
+                <li class="top__gnb__item__gap"></li>
+                <li class="top__gnb__item nav-item">
+                    <a class="top__gnb__item__link nav-link" href="#">회원정보</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header navbar navbar-light bg-light shadow">
+
+        <nav class="gnb container navbar navbar-expand-lg navbar-light">
+            <a class="gnb__logo navbar-brand p-0 me-2" href="#">
+                <img src="images/main/images/as_logo2.png" alt="logo-img" class="gnb__logo__img">
+            </a>
+
+            <button class="gnb__toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="gnb__toggler__icon navbar-toggler-icon"></span>
+              </button>
+
+            <div class="gnb__wrap collapse navbar-collapse justify-content-end" id="navbarTogglerDemo">
+                <ul class="gnb__list navbar-nav mr-0 mt-2 mt-lg-0">
+                    <li class="gnb__item nav-item">
+                        <a class="gnb__item__link nav-link" href="#">서비스 소개</a>
+                    </li>
+                    <li class="gnb__item nav-item">
+                        <a class="gnb__item__link nav-link" href="#">액션 라이브</a>
+                    </li>
+                    <li class="gnb__item nav-item">
+                        <a class="gnb__item__link nav-link" href="#">하이라이트</a>
+                    </li>
+                    <li class="gnb__item nav-item">
+                        <a class="gnb__item__link nav-link" href="#">팬페이지</a>
+                    </li>
+                    <li class="gnb__item nav-item">
+                        <a class="gnb__item__link nav-link" href="#">야구소식</a>
+                    </li>
+                    <li class="gnb__item nav-item">
+                        <a class="gnb__item__link nav-link" href="#">야구설명서</a>
+                    </li>
+                    <li class="gnb__item nav-item">
+                        <a class="gnb__item__link nav-link" href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <div class="container container-md container-sm pt-4">
+            <!-- 실시간 플레이어 -->
+            <!-- <article class="liveplay">
+                <h2 class="liveplay__title d-none">실시간 방송</h2>
+                <div class="liveplay__list position-relative">
+
+                    <div class="liveplay__item__left liveplay__item__left__02 position-absolute border-radius">
+                        <img src="images/main/images/sec1_06.png" alt="liveplay__item__left__02__img" class="liveplay__item__left__02__img">
+                        <div class="liveplay__item__left__overlay liveplay__item__left__overlay__02 position-absolute"></div>
+                    </div>
+
+                    <div class="liveplay__item__left liveplay__item__left__01 position-absolute border-radius">
+                        <img src="images/main/images/sec1_04.png" alt="liveplay__item__left__01__img" class="liveplay__item__left__01__img">
+                        <div class="liveplay__item__left__overlay position-absolute"></div>
+                    </div>
+
+                    <div class="liveplay__item border-radius m-auto position-relative active">
+                        <div class="liveplay__item__overlay position-absolute">
+                            <img src="images/main/images/sec1_01.png" alt="liveplay__live__icon" class="liveplay__item__overlay_icon position-absolute">
+                            <img src="images/main/images/sec1_02.png" alt="liveplay__live__bottom" class="liveplay__item__overlay__bottom position-absolute">
+                            <div class="liveplay__item__overlay__box position-absolute">
+                                <span class="liveplay__item__overlay__title mb-2">KIA vs 두산 (KIA tigers vs DOOSAN bears)</span>
+                                <span class="liveplay__item__overlay__sub font-weight-lighter">잠실종합경기장 잠실야구장</span>
+                            </div>
+                        </div>
+                        <img src="images/main/images/sec1_03.png" alt="liveplay__item__img__01" class="liveplay__item__img">
+                    </div>
+
+
+                    <div class="liveplay__item__right liveplay__item__right__01 position-absolute border-radius">
+                        <img src="images/main/images/sec1_05.png" alt="liveplay__item__right__01__img" class="liveplay__item__right__01__img">
+                        <div class="liveplay__item__right__overlay position-absolute"></div>
+                    </div>
+
+                    <div class="liveplay__item__right liveplay__item__right__02 position-absolute border-radius">
+                        <img src="images/main/images/sec1_07.png" alt="liveplay__item__right__02__img" class="liveplay__item__right__02__img">
+                        <div class="liveplay__item__right__overlay liveplay__item__right__overlay__02 position-absolute"></div>
+                    </div>
+
+                </div>
+            </article> -->
+
+            <!-- slide test -->
+            <article id="slider" class="liveplay">
+                <h2 class="liveplay__title d-none">실시간 방송</h2>
+
+                <input type="radio" name="slider" id="s1">
+                <input type="radio" name="slider" id="s2">
+                <input type="radio" name="slider" id="s3" checked>
+                <input type="radio" name="slider" id="s4">
+                <input type="radio" name="slider" id="s5">
+
+                <div for="s1" id="slide1" class="liveplay__item">
+                    <label for="s1" id="slide1">
+                    <img src="images/main/images/sec1_06.png" width="100%" height="100%" class="slide__img slide1__img">
+                    <span class="slide__img__filter"></span>
+                </label>
+                </div>
+
+                <div for="s2" id="slide2" class="liveplay__item">
+                    <label for="s2" id="slide2">
+                    <img src="images/main/images/sec1_04.png" width="100%" height="100%" class="slide__img slide2__img">
+                    <span class="slide__img__filter"></span>
+                </label>
+                </div>
+
+                <div for="s3" id="slide3" class="liveplay__item">
+                    <label for="s3" id="slide3">
+                        <img src="images/main/images/sec1_03.png" width="100%" height="100%" class="slide__img slide3__img">
+                        <span class="slide__img__filter"></span>
+                    </label>
+                    <div class="liveplay__item__overlay">
+                        <img src="images/main/images/sec1_01.png" alt="liveplay__live__icon" class="liveplay__item__overlay_icon">
+                        <img src="images/main/images/sec1_02.png" alt="liveplay__live__bottom" class="liveplay__item__overlay__bottom">
+                        <div class="liveplay__item__overlay__box">
+                            <span class="liveplay__item__overlay__title mb-2">KIA vs 두산 (KIA tigers vs DOOSAN bears)</span>
+                            <span class="liveplay__item__overlay__sub font-weight-lighter">잠실종합경기장 잠실야구장</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div for="s4" id="slide4" class="liveplay__item">
+                    <label for="s4" id="slide4">
+                        <img src="images/main/images/sec1_05.png" width="100%" height="100%" class="slide__img slide4__img">
+                        <span class="slide__img__filter"></span>
+                    </label>
+                </div>
+
+                <div for="s5" id="slide5" class="liveplay__item">
+                    <label for="s5" id="slide5">
+                        <img src="images/main/images/sec1_07.png" width="100%" height="100%" class="slide__img slide5__img">
+                        <span class="slide__img__filter"></span>
+                    </label>
+                </div>
+
+            </article>
+
+            <!-- 메인 배너 -->
+            <article id="carouselExampleControls" class="banners carousel slide" data-bs-ride="carousel">
+                <h2 class="banners__title d-none">Banners</h2>
+                <div class="banners__wrap carousel-inner border-radius shadow">
+                    <div class="banners__item carousel-item active">
+                        <img src="images/main/images/sec2_banner1.png" class="banners__img img-fluid d-block w-100" alt="banner_01" />
+                    </div>
+                    <div class="banners__item carousel-item">
+                        <img src="images/main/images/sec2_banner2.png" class="banners__img img-fluid d-block w-100" alt="banner_01" />
+                    </div>
+                    <div class="banners__item carousel-item">
+                        <img src="images/main/images/sec2_banner3_1.png" class="banners__img img-fluid d-block w-100" alt="banner_01" />
+                    </div>
+                </div>
+
+                <a class="banners__item__prev carousel-control-prev fs-1" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <img src="images/main/images/sec2_icon1.png" alt="banner-left-icon" class="banners__item__prev__icon">
+                    <span class="banners__item__prev__text sr-only">Previous</span>
+                </a>
+                <a class="banners__item__next carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <img src="images/main/images/sec2_icon2.png" alt="banner-next-icon" class="banners__item__next__icon">
+                    <span class="banners__item__next__text sr-only">Next</span>
+                </a>
+            </article>
+
+            <!-- 하이라이트 -->
+            <article class="highlight row mx-0">
+
+                <div class="highlight__header col-12">
+                    <h2 class="highlight__title d-inline-block">하이라이트</h2>
+                    <span class="highlight__more btn btn-secondary border-radius">더보기</span>
+                </div>
+
+                <div class="highlight__contents row">
+
+                    <div class="highlight__item col-xl-3 col-lg-6 col-md-12">
+                        <div class="highlight__item__wrap">
+                            <div class="highlight__item__thumbnail" onclick="window.location.href='#' ">
+                                <img src="images/main/images/sec3_tn1.png" alt="highlight_01" class="highlight__item__img">
+                                <span class="highlight__item__length">00:00</span>
+                            </div>
+                            <div class="highlight__item__body text-start">
+                                <span class="highlight__item__title" onclick="window.location.href='#' ">'폭발적인 안타' LG, 롯데에 13-3 압승</span>
+                                <div class="highlight__item__box">
+                                    <span class="highlight__item__box__views"><i class="highlight__item__box__views__icon bi bi-play"></i>118</span>
+                                    <span class="highlight__item__box__gap"></span>
+                                    <span class="highlight__item__box__date">2021.10.15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight__item col-xl-3 col-lg-6 col-md-12">
+                        <div class="highlight__item__wrap">
+                            <div class="highlight__item__thumbnail" onclick="window.location.href='#' ">
+                                <img src="images/main/images/sec3_tn2.png" alt="highlight_01" class="highlight__item__img">
+                                <span class="highlight__item__length">00:00</span>
+                            </div>
+                            <div class="highlight__item__body text-start">
+                                <span class="highlight__item__title" onclick="window.location.href='#' ">NC, 신민혁 활약으로 키움잡고 연패 탈출</span>
+                                <div class="highlight__item__box">
+                                    <span class="highlight__item__box__views"><i class="highlight__item__box__views__icon bi bi-play"></i>118</span>
+                                    <span class="highlight__item__box__gap"></span>
+                                    <span class="highlight__item__box__date">2021.10.15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight__item col-xl-3 col-lg-6 col-md-12">
+                        <div class="highlight__item__wrap">
+                            <div class="highlight__item__thumbnail" onclick="window.location.href='#' ">
+                                <img src="images/main/images/sec3_tn3.png" alt="highlight_01" class="highlight__item__img">
+                                <span class="highlight__item__length">00:00</span>
+                            </div>
+                            <div class="highlight__item__body text-start">
+                                <span class="highlight__item__title" onclick="window.location.href='#' ">KIA-삼성, 완벽한 투타로 KIA 승리</span>
+                                <div class="highlight__item__box">
+                                    <span class="highlight__item__box__views"><i class="highlight__item__box__views__icon bi bi-play"></i>118</span>
+                                    <span class="highlight__item__box__gap"></span>
+                                    <span class="highlight__item__box__date">2021.10.14</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight__item col-xl-3 col-lg-6 col-md-12">
+                        <div class="highlight__item__wrap">
+                            <div class="highlight__item__thumbnail" onclick="window.location.href='#' ">
+                                <img src="images/main/images/sec3_tn4.png" alt="highlight_01" class="highlight__item__img">
+                                <span class="highlight__item__length">00:00</span>
+                            </div>
+                            <div class="highlight__item__body text-start">
+                                <span class="highlight__item__title" onclick="window.location.href='#' ">LG-롯데, 접전 끝에 안타까운 무승부</span>
+                                <div class="highlight__item__box">
+                                    <span class="highlight__item__box__views"><i class="highlight__item__box__views__icon bi bi-play"></i>118</span>
+                                    <span class="highlight__item__box__gap"></span>
+                                    <span class="highlight__item__box__date">2021.10.14</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight__item col-xl-3 col-lg-6 col-md-12">
+                        <div class="highlight__item__wrap">
+                            <div class="highlight__item__thumbnail" onclick="window.location.href='#' ">
+                                <img src="images/main/images/sec3_tn5.png" alt="highlight_01" class="highlight__item__img">
+                                <span class="highlight__item__length">00:00</span>
+                            </div>
+                            <div class="highlight__item__body text-start">
+                                <span class="highlight__item__title" onclick="window.location.href='#' ">몽고메리 활약, 삼성-KIA 꺾고 2연승</span>
+                                <div class="highlight__item__box">
+                                    <span class="highlight__item__box__views"><i class="highlight__item__box__views__icon bi bi-play"></i>118</span>
+                                    <span class="highlight__item__box__gap"></span>
+                                    <span class="highlight__item__box__date">2021.10.14</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight__item col-xl-3 col-lg-6 col-md-12">
+                        <div class="highlight__item__wrap">
+                            <div class="highlight__item__thumbnail" onclick="window.location.href='#' ">
+                                <img src="images/main/images/sec3_tn6.png" alt="highlight_01" class="highlight__item__img">
+                                <span class="highlight__item__length">00:00</span>
+                            </div>
+                            <div class="highlight__item__body text-start">
+                                <span class="highlight__item__title" onclick="window.location.href='#' ">LG-SSG 무승부, 나란히 순위 하락</span>
+                                <div class="highlight__item__box">
+                                    <span class="highlight__item__box__views"><i class="highlight__item__box__views__icon bi bi-play"></i>118</span>
+                                    <span class="highlight__item__box__gap"></span>
+                                    <span class="highlight__item__box__date">2021.10.15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight__item col-xl-3 col-lg-6 col-md-12">
+                        <div class="highlight__item__wrap">
+                            <div class="highlight__item__thumbnail" onclick="window.location.href='#' ">
+                                <img src="images/main/images/sec3_tn7.png" alt="highlight_01" class="highlight__item__img">
+                                <span class="highlight__item__length">00:00</span>
+                            </div>
+                            <div class="highlight__item__body text-start">
+                                <span class="highlight__item__title" onclick="window.location.href='#' ">NC, 두산 꺾고 공동 5위 도약</span>
+                                <div class="highlight__item__box">
+                                    <span class="highlight__item__box__views"><i class="highlight__item__box__views__icon bi bi-play"></i>118</span>
+                                    <span class="highlight__item__box__gap"></span>
+                                    <span class="highlight__item__box__date">2021.10.13</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight__item col-xl-3 col-lg-6 col-md-12">
+                        <div class="highlight__item__wrap">
+                            <div class="highlight__item__thumbnail" onclick="window.location.href='#' ">
+                                <img src="images/main/images/sec3_tn8.png" alt="highlight_01" class="highlight__item__img">
+                                <span class="highlight__item__length">00:00</span>
+                            </div>
+                            <div class="highlight__item__body text-start">
+                                <span class="highlight__item__title" onclick="window.location.href='#' ">SSG, 투수진 호투로 KT에 승리</span>
+                                <div class="highlight__item__box">
+                                    <span class="highlight__item__box__views"><i class="highlight__item__box__views__icon bi bi-play"></i>118</span>
+                                    <span class="highlight__item__box__gap"></span>
+                                    <span class="highlight__item__box__date">2021.10.13</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- 경기 일정/결과 & 구단 순위 -->
+            <article class="schedule__and__record row mx-0">
+                <!-- 경기 일정/결과 -->
+                <div class="schedule col">
+                    <div class="schedule__header">
+                        <h2 class="schedule__title d-inline-block">경기 일정/결과</h2>
+                        <span class="schedule__more btn btn-secondary border-radius">더보기</span>
+                    </div>
+
+                    <div class="schedule__contents border-radius shadow">
+                        <div class="schedule__date">
+                            <a class="schedule__date__prev border-radius shadow" href="#">
+                                <img src="images/main/images/sec2_icon1.png" alt="schedule__date__prev__img" class="schedule__date__prev__img">
+                            </a>
+
+                            <span class="schedule__date__today">10월 13일 (수요일)</span>
+
+                            <a class="schedule__date__next border-radius shadow" href="#">
+                                <img src="images/main/images/sec2_icon2.png" alt="schedule__date__next__img" class="schedule__date__next__img">
+                            </a>
+                        </div>
+
+                        <div class="schedule__list card border-radius">
+
+                            <div class="schedule__item row align-items-center border-bottom justify-content-md-center">
+                                <div class="schedule__home col-3">
+                                    <div class="schedule__home__wrap row justify-content-end">
+                                        <div class="schedule__home__box col-md-auto text-right align-self-center">
+                                            <span class="schedule__home__title ">LG</span>
+                                        </div>
+                                        <div class="schedule__home__logo col-md-auto text-center align-self-center">
+                                            <img src="images/main/images/sec4_logo03.png" alt="home_logo_img" class="schedule__home__logo__img" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="schedule__info col-6">
+                                    <div class="row text-center justify-content-md-center">
+                                        <span class="schedule__home__score col-md-auto">4</span>
+                                        <div class="schedule__info__box col-md-auto align-self-center px-4">
+                                            <span class="schedule__info__end">종료</span>
+                                            <div class="schedule__highlight row">
+                                                <a href="# " class="schedule__highlight__btn btn btn-secondary border-radius col-md-auto text-center px-2">하이라이트</a>
+                                            </div>
+                                        </div>
+                                        <span class="schedule__away__score col-md-auto ">4</span>
+                                    </div>
+                                </div>
+
+                                <div class="schedule__away col-3">
+                                    <div class="schedule__away__wrap row">
+                                        <div class="schedule__away__logo col-md-auto text-center align-self-center">
+                                            <img src="images/main/images/sec4_logo08.png" alt="away_logo_img" class="schedule__away__logo__img" />
+                                        </div>
+                                        <div class="schedule__away__box col-md-auto text-left align-self-center">
+                                            <span class="schedule__away__title">롯데</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="schedule__item row align-items-center border-bottom justify-content-md-center">
+                                <div class="schedule__home col-3 ">
+                                    <div class="schedule__home__wrap row justify-content-end">
+                                        <div class="schedule__home__box col-md-auto text-right align-self-center">
+                                            <span class="schedule__home__title">KT</span>
+                                            <span class="schedule__home__pitcher">패 이대은</span>
+                                        </div>
+                                        <div class="schedule__home__logo col-md-auto text-center align-self-center">
+                                            <img src="images/main/images/sec4_logo01.png" alt="home_logo_img" class="schedule__home__logo__img" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="schedule__info col-6">
+                                    <div class="row text-center justify-content-md-center">
+                                        <span class="schedule__home__score schedule__score__lose col-md-auto">3</span>
+                                        <div class="schedule__info__box col-md-auto align-self-center px-4">
+                                            <span class="schedule__info__end">종료</span>
+                                            <div class="schedule__highlight row">
+                                                <a href="# " class="schedule__highlight__btn btn btn-secondary border-radius col-md-auto text-center px-2">하이라이트</a>
+                                            </div>
+                                        </div>
+                                        <span class="schedule__away__score schedule__score__win col-md-auto">5</span>
+                                    </div>
+                                </div>
+
+                                <div class="schedule__away col-3">
+                                    <div class="schedule__away__wrap row">
+                                        <div class="schedule__away__logo col-md-auto text-center align-self-center">
+                                            <img src="images/main/images/sec4_logo04.png" alt="away_logo_img" class="schedule__away__logo__img" />
+                                        </div>
+                                        <div class="schedule__away__box col-md-auto text-left align-self-center">
+                                            <span class="schedule__away__title">두산</span>
+                                            <span class="schedule__away__pitcher">승 홍건희</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="schedule__item row align-items-center border-bottom justify-content-md-center">
+                                <div class="schedule__home col-3">
+                                    <div class="schedule__home__wrap row justify-content-end">
+                                        <div class="schedule__home__box col-md-auto text-right align-self-center">
+                                            <span class="schedule__home__title">NC</span>
+                                            <span class="schedule__home__pitcher">패 파슨스</span>
+                                        </div>
+                                        <div class="schedule__home__logo col-md-auto text-center align-self-center">
+                                            <img src="images/main/images/sec4_logo07.png" alt="home_logo_img" class="schedule__home__logo__img" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="schedule__info col-6">
+                                    <div class="row text-center justify-content-md-center">
+                                        <span class="schedule__home__score schedule__score__lose col-md-auto">2</span>
+                                        <div class="schedule__info__box col-md-auto align-self-center px-4">
+                                            <span class="schedule__info__end">종료</span>
+                                            <div class="schedule__highlight row">
+                                                <a href="# " class="schedule__highlight__btn btn btn-secondary border-radius col-md-auto text-center px-2">하이라이트</a>
+                                            </div>
+                                        </div>
+                                        <span class="schedule__away__score schedule__score__win col-md-auto">8</span>
+                                    </div>
+                                </div>
+
+                                <div class="schedule__away col-3">
+                                    <div class="schedule__away__wrap row">
+                                        <div class="schedule__away__logo col-md-auto text-center align-self-center">
+                                            <img src="images/main/images/sec4_logo05.png" alt="away_logo_img" class="schedule__away__logo__img" />
+                                        </div>
+                                        <div class="schedule__away__box col-md-auto text-left align-self-center">
+                                            <span class="schedule__away__title">키움</span>
+                                            <span class="schedule__away__pitcher">승 안우진</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="schedule__item row align-items-center border-bottom justify-content-md-center">
+                                <div class="schedule__home col-3">
+                                    <div class="schedule__home__wrap row justify-content-end">
+                                        <div class="schedule__home__box col-md-auto text-right align-self-center">
+                                            <span class="schedule__home__title">삼성</span>
+                                            <span class="schedule__home__pitcher">승 몽고메리</span>
+                                        </div>
+                                        <div class="schedule__home__logo col-md-auto text-center align-self-center">
+                                            <img src="images/main/images/sec4_logo02.png" alt="home_logo_img" class="schedule__home__logo__img" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="schedule__info col-6">
+                                    <div class="row text-center justify-content-md-center">
+                                        <span class="schedule__home__score schedule__score__win col-md-auto">5</span>
+                                        <div class="schedule__info__box col-md-auto align-self-center px-4">
+                                            <span class="schedule__info__end">종료</span>
+                                            <div class="schedule__highlight row">
+                                                <a href="# " class="schedule__highlight__btn btn btn-secondary border-radius col-md-auto text-center px-2">하이라이트</a>
+                                            </div>
+                                        </div>
+                                        <span class="schedule__away__score schedule__score__lose col-md-auto">3</span>
+                                    </div>
+                                </div>
+
+                                <div class="schedule__away col-3">
+                                    <div class="schedule__away__wrap row">
+                                        <div class="schedule__away__logo col-md-auto text-center align-self-center">
+                                            <img src="images/main/images/sec4_logo09.png" alt="away_logo_img" class="schedule__away__logo__img" />
+                                        </div>
+                                        <div class="schedule__away__box col-md-auto text-left align-self-center">
+                                            <span class="schedule__away__title">KIA</span>
+                                            <span class="schedule__away__pitcher">패 다카하시</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 구단 순위 -->
+                <div class="record col">
+
+                    <div class="record__header">
+                        <h2 class="record__title d-inline-block">구단 순위</h2>
+                    </div>
+
+                    <div class="record__contents border-radius shadow">
+
+                        <table class="record__contents__table table table-hover text-center">
+                            <thead class="record__contents__header">
+                                <tr>
+                                    <th scope="col">순위</th>
+                                    <th scope="col">팀명</th>
+                                    <th scope="col">경기</th>
+                                    <th scope="col">승</th>
+                                    <th scope="col">무</th>
+                                    <th scope="col">패</th>
+                                    <th scope="col">승률</th>
+                                    <th scope="col">게임차</th>
+                                </tr>
+                            </thead>
+                            <tbody class="record__kbo__tbody align-items-center justify-content-md-center">
+                                <tr class="record__kbo__tr align-items-center">
+                                    <th class="record__kbo__tr__ranking">1</th>
+                                    <td class="record__kbo__tr__title"><img src="images/main/images/sec4_logo01.png" alt="record__kbo__tr__logo" class="record__kbo__tr__logo">KT</td>
+                                    <td>130</td>
+                                    <td>71</td>
+                                    <td>7</td>
+                                    <td>52</td>
+                                    <td>0.577</td>
+                                    <td>0.0</td>
+                                </tr>
+                                <tr class="record__kbo__tr">
+                                    <th class="record__kbo__tr__ranking">2</th>
+                                    <td class="record__kbo__tr__title"><img src="images/main/images/sec4_logo02.png" alt="record__kbo__tr__logo" class="record__kbo__tr__logo">삼성</td>
+                                    <td>132</td>
+                                    <td>70</td>
+                                    <td>8</td>
+                                    <td>54</td>
+                                    <td>0.565</td>
+                                    <td>1.5</td>
+                                </tr>
+                                <tr class="record__kbo__tr">
+                                    <th class="record__kbo__tr__ranking">3</th>
+                                    <td class="record__kbo__tr__title"><img src="images/main/images/sec4_logo03.png" alt="record__kbo__tr__logo" class="record__kbo__tr__logo">LG</td>
+                                    <td>127</td>
+                                    <td>66</td>
+                                    <td>9</td>
+                                    <td>52</td>
+                                    <td>0.559</td>
+                                    <td>2.5</td>
+                                </tr>
+                                <tr class="record__kbo__tr">
+                                    <th class="record__kbo__tr__ranking">4</th>
+                                    <td class="record__kbo__tr__title"><img src="images/main/images/sec4_logo04.png" alt="record__kbo__tr__logo" class="record__kbo__tr__logo">두산</td>
+                                    <td>128</td>
+                                    <td>64</td>
+                                    <td>5</td>
+                                    <td>59</td>
+                                    <td>0.520</td>
+                                    <td>7.0</td>
+                                </tr>
+                                <tr class="record__kbo__tr">
+                                    <th class="record__kbo__tr__ranking">5</th>
+                                    <td class="record__kbo__tr__title"><img src="images/main/images/sec4_logo05.png" alt="record__kbo__tr__logo" class="record__kbo__tr__logo">키움</td>
+                                    <td>130</td>
+                                    <td>63</td>
+                                    <td>6</td>
+                                    <td>61</td>
+                                    <td>0.508</td>
+                                    <td>8.5</td>
+                                </tr>
+                                <tr class="record__kbo__tr">
+                                    <th class="record__kbo__tr__ranking">6</th>
+                                    <td class="record__kbo__tr__title"><img src="images/main/images/sec4_logo06.png" alt="record__kbo__tr__logo" class="record__kbo__tr__logo">SSG</td>
+                                    <td>132</td>
+                                    <td>60</td>
+                                    <td>12</td>
+                                    <td>60</td>
+                                    <td>0.500</td>
+                                    <td>9.5</td>
+                                </tr>
+                                <tr class="record__kbo__tr">
+                                    <th class="record__kbo__tr__ranking">7</th>
+                                    <td class="record__kbo__tr__title"><img src="images/main/images/sec4_logo07.png" alt="record__kbo__tr__logo" class="record__kbo__tr__logo">NC</td>
+                                    <td>127</td>
+                                    <td>59</td>
+                                    <td>7</td>
+                                    <td>61</td>
+                                    <td>0.492</td>
+                                    <td>10.5</td>
+                                </tr>
+                                <tr class="record__kbo__tr">
+                                    <th class="record__kbo__tr__ranking">8</th>
+                                    <td class="record__kbo__tr__title"><img src="images/main/images/sec4_logo08.png" alt="record__kbo__tr__logo" class="record__kbo__tr__logo">롯데</td>
+                                    <td>131</td>
+                                    <td>60</td>
+                                    <td>6</td>
+                                    <td>65</td>
+                                    <td>0.480</td>
+                                    <td>12.0</td>
+                                </tr>
+                                <tr class="record__kbo__tr">
+                                    <th class="record__kbo__tr__ranking">9</th>
+                                    <td class="record__kbo__tr__title"><img src="images/main/images/sec4_logo09.png" alt="record__kbo__tr__logo" class="record__kbo__tr__logo">KIA</td>
+                                    <td>128</td>
+                                    <td>50</td>
+                                    <td>8</td>
+                                    <td>70</td>
+                                    <td>0.417</td>
+                                    <td>19.5</td>
+                                </tr>
+                                <tr class="record__kbo__tr">
+                                    <th class="record__kbo__tr__ranking">10</th>
+                                    <td class="record__kbo__tr__title"><img src="images/main/images/sec4_logo10.png" alt="record__kbo__tr__logo" class="record__kbo__tr__logo">한화</td>
+                                    <td>133</td>
+                                    <td>47</td>
+                                    <td>10</td>
+                                    <td>76</td>
+                                    <td>0.382</td>
+                                    <td>24.0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="record__contents__table__bg">
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </article>
+
+        </div>
+
+        <footer class="footer bg-light w-100">
+            <div class="fnb__list row w-50 no-gutters text-center m-auto align-items-end">
+                <span class="fnb__item col-4 text-right"><a href="#" class="text-decoration-none fnb__item__link">이용약관</a></span>
+                <span class="fnb__item col-4 text-center"><a href="#" class="text-decoration-none fnb__item__link">개인정보취급방침</a></span>
+                <span class="fnb__item col-4 text-left"><a href="#" class="text-decoration-none fnb__item__link">제휴문의</a></span>
+            </div>
+
+            <div class="company__info row no-gutters text-center m-auto align-items-center justify-content-md-center">
+                <span class="company__title text-right col-md-auto mx-2"><a href="#" class="text-decoration-none fnb__item__link">(주)엑스콘</a></span>
+                <span class="company__info__gap"></span>
+                <span class="company__address text-center col-md-auto mx-2">서울특별시 마포구 백범로 35, 서강대학교 떼이야르관 409호</span>
+                <span class="company__info__gap"></span>
+                <span class="company__ceo text-left col-md-auto mx-2">대표이사: 최요한</span>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Script -->
+    <!-- bootstrap -->
+    <!-- ver 4.6.0 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous "></script>
+
+</body>
+
+</html>
